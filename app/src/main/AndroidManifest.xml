@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lentcoding.meetup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo_big"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/label_home">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.HomeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SearchPlacesActivity"
+            android:label="@string/label_search_places"
+            android:parentActivityName=".HomeActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.SearchPlacesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FriendsActivity"
+            android:label="@string/label_friends"
+            android:parentActivityName=".HomeActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.FriendsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FriendDetailActivity"
+            android:label="@string/label_friend_details"
+            android:parentActivityName=".FriendsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.FriendDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FriendAddActivity"
+            android:label="@string/label_add_friend"
+            android:parentActivityName=".FriendsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.FriendAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FriendUpdateActivity"
+            android:label="@string/label_update_friend"
+            android:parentActivityName=".FriendsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.FriendUpdateActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MeetUpsActivity"
+            android:label="@string/label_meet_ups"
+            android:parentActivityName=".HomeActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.MeetUpsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MeetUpDetailActivity"
+            android:label="@string/label_meet_up_details"
+            android:parentActivityName=".MeetUpsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.MeetUpDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MeetUpAddActivity"
+            android:label="@string/label_add_meet_up"
+            android:parentActivityName=".MeetUpsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.MeetUpAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MeetUpUpdateActivity"
+            android:label="@string/label_update_meet_up"
+            android:parentActivityName=".MeetUpsActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.MeetUpUpdateActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PlacesActivity"
+            android:label="@string/label_places"
+            android:parentActivityName=".HomeActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.PlacesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:label="@string/label_place_details"
+            android:parentActivityName=".PlacesActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.PlaceDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PlaceAddActivity"
+            android:label="@string/label_add_place"
+            android:parentActivityName=".PlacesActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.PlaceAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PlaceUpdateActivity"
+            android:label="@string/label_update_place"
+            android:parentActivityName=".PlacesActivity">
+            <intent-filter>
+                <action android:name="com.lentcoding.meetup.PlaceUpdateActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
