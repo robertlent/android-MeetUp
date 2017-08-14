@@ -16,36 +16,44 @@
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/name"
         android:inputType="textPersonName|textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/address"
         android:inputType="textPostalAddress|textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
         android:inputType="phone"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPlaceType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/type_of_place"
         android:inputType="textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <Button
@@ -56,6 +64,7 @@
         android:onClick="onClick"
         android:text="@string/update_place"
         android:textColor="#00C000"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
 </LinearLayout>

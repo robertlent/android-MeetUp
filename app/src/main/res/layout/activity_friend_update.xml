@@ -16,27 +16,33 @@
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/name"
         android:inputType="textPersonName|textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
         android:inputType="phone"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <Button
@@ -47,6 +53,7 @@
         android:onClick="onClick"
         android:text="@string/update_friend"
         android:textColor="#00C000"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
 </LinearLayout>

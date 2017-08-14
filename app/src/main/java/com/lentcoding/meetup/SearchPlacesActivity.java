@@ -16,6 +16,7 @@ public class SearchPlacesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_places);
+
         searchKeyword = (EditText) findViewById(R.id.search_keyword);
     }
 

@@ -71,7 +71,7 @@ public class MeetUpsActivity extends AppCompatActivity {
         db.close();
 
         meetUpsListView = (ListView) findViewById(R.id.lstMeetUps);
-        listAdapter = new ArrayAdapter<String>(MeetUpsActivity.this, android.R.layout.simple_list_item_1, meetUpsList);
+        listAdapter = new ArrayAdapter<String>(MeetUpsActivity.this, R.layout.list, meetUpsList);
         meetUpsListView.setAdapter(listAdapter);
         registerForContextMenu(meetUpsListView);
 

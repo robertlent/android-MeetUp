@@ -72,7 +72,7 @@ public class PlacesActivity extends AppCompatActivity {
         db.close();
 
         PlacesListView = (ListView) findViewById(R.id.lstPlaces);
-        listAdapter = new ArrayAdapter<>(PlacesActivity.this, android.R.layout.simple_list_item_1, PlacesList);
+        listAdapter = new ArrayAdapter<>(PlacesActivity.this, R.layout.list, PlacesList);
         PlacesListView.setAdapter(listAdapter);
         registerForContextMenu(PlacesListView);
 

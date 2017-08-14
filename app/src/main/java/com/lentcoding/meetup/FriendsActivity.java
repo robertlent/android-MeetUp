@@ -71,7 +71,7 @@ public class FriendsActivity extends AppCompatActivity {
         db.close();
 
         friendsListView = (ListView) findViewById(R.id.lstFriends);
-        listAdapter = new ArrayAdapter<>(FriendsActivity.this, android.R.layout.simple_list_item_1, friendsList);
+        listAdapter = new ArrayAdapter<>(FriendsActivity.this, R.layout.list, friendsList);
         friendsListView.setAdapter(listAdapter);
         registerForContextMenu(friendsListView);
 

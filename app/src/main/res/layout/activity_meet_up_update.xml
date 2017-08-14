@@ -16,36 +16,44 @@
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/name"
         android:inputType="textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/description"
         android:inputType="textCapSentences"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtFriends"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/friends"
         android:inputType="textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPlace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/place"
         android:inputType="textCapWords"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
@@ -53,9 +61,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusableInTouchMode="false"
+        android:hint="@string/select_date"
         android:inputType="date"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <EditText
@@ -63,9 +73,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusableInTouchMode="false"
+        android:hint="@string/select_time"
         android:inputType="time"
         android:text=""
         android:textColor="#00C000"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <Button
@@ -76,6 +88,7 @@
         android:onClick="onClick"
         android:text="@string/update_meet_up"
         android:textColor="#00C000"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
 </LinearLayout>

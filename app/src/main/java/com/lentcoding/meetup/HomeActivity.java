@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         homeOptionsList = (ListView) findViewById(R.id.lstHomeOptions);
-        listAdapter = new ArrayAdapter<>(HomeActivity.this, android.R.layout.simple_list_item_1, homeOptions);
+        listAdapter = new ArrayAdapter<>(HomeActivity.this, R.layout.list, homeOptions);
         homeOptionsList.setAdapter(listAdapter);
         homeOptionsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
